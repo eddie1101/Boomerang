@@ -1,0 +1,13 @@
+{
+  "itemGroup.boomerang": "Example Mod Tab",
+  "block.boomerang.example_block": "Example Block",
+  "item.boomerang.example_item": "Example Item",
+
+  "boomerang.configuration.title": "Boomerang Configs",
+  "boomerang.configuration.section.boomerang.common.toml": "Boomerang Configs",
+  "boomerang.configuration.section.boomerang.common.toml.title": "Boomerang Configs",
+  "boomerang.configuration.items": "Item List",
+  "boomerang.configuration.logDirtBlock": "Log Dirt Block",
+  "boomerang.configuration.magicNumberIntroduction": "Magic Number Text",
+  "boomerang.configuration.magicNumber": "Magic Number"
+}
