@@ -2,6 +2,7 @@
   "itemGroup.boomerang": "Example Mod Tab",
   "block.boomerang.example_block": "Example Block",
   "item.boomerang.example_item": "Example Item",
+  "item.boomerang.boomerang" : "Boomerang",
 
   "boomerang.configuration.title": "Boomerang Configs",
   "boomerang.configuration.section.boomerang.common.toml": "Boomerang Configs",

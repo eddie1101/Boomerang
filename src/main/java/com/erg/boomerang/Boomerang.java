@@ -1,5 +1,6 @@
 package com.erg.boomerang;
 
+import com.erg.boomerang.BoomerangItem;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -54,6 +55,8 @@ public class Boomerang {
     public static final DeferredItem<Item> EXAMPLE_ITEM = ITEMS.registerSimpleItem("example_item", new Item.Properties().food(new FoodProperties.Builder()
             .alwaysEdible().nutrition(1).saturationModifier(2f).build()));
 
+    public static final DeferredItem<BoomerangItem> BOOMERANG_ITEM = ITEMS.registerItem("boomerang", BoomerangItem::new);
+
     // Creates a creative tab with the id "boomerang:example_tab" for the example item, that is placed after the combat tab
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> EXAMPLE_TAB = CREATIVE_MODE_TABS.register("example_tab", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.boomerang")) //The language key for the title of your CreativeModeTab
@@ -105,6 +108,9 @@ public class Boomerang {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(EXAMPLE_BLOCK_ITEM);
+        }
+        else if (event.getTabKey() == CreativeModeTabs.COMBAT) {
+            event.accept(BOOMERANG_ITEM);
         }
     }
 
