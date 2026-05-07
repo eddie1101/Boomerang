@@ -16,6 +16,10 @@ public class BoomerangEntity extends Projectile
     super(type, level);
   }
 
+  public BoomerangEntity(EntityType<? extends BoomerangEntity> type, Level level, LivingEntity owner, ItemStack boomerang, int itemSlot, float power) {
+    this(type, level, owner, boomerang, itemSlot, owner.getX(), owner.getEyeY() - 0.5f, owner.getZ(), power);
+  }
+
   public BoomerangEntity(EntityType<? extends BoomerangEntity> type, Level level)
   {
     super(type, level);
