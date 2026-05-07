@@ -1,10 +1,10 @@
 package com.erg.boomerang;
 
-import java.util.List;
-
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.neoforge.common.ModConfigSpec;
+
+import java.util.List;
 
 // An example config class. This is not required, but it's a good idea to have one to keep your config organized.
 // Demonstrates how to use Neo's config APIs
@@ -27,6 +27,10 @@ public class Config {
     public static final ModConfigSpec.ConfigValue<List<? extends String>> ITEM_STRINGS = BUILDER
             .comment("A list of items to log on common setup.")
             .defineListAllowEmpty("items", List.of("minecraft:iron_ingot"), () -> "", Config::validateItemName);
+
+    public static final ModConfigSpec.IntValue BOOMERANG_RANGE = BUILDER
+            .comment("The range in blocks that the boomerang travels before homing back to the user.")
+            .defineInRange("boomerangRange", 16, 0, 1024);
 
     static final ModConfigSpec SPEC = BUILDER.build();
 

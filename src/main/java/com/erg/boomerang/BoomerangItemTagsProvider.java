@@ -24,7 +24,7 @@ public class BoomerangItemTagsProvider extends ItemTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.@NotNull Provider provider) {
-        tag(ItemTags.SHARP_WEAPON_ENCHANTABLE).add(Boomerang.BOOMERANG_ITEM.get());
+        tag(ItemTags.BOW_ENCHANTABLE).add(Boomerang.BOOMERANG_ITEM.get());
         tag(ItemTags.WEAPON_ENCHANTABLE).add(Boomerang.BOOMERANG_ITEM.get());
         tag(ItemTags.FIRE_ASPECT_ENCHANTABLE).add(Boomerang.BOOMERANG_ITEM.get());
         tag(ItemTags.CROSSBOW_ENCHANTABLE).add(Boomerang.BOOMERANG_ITEM.get());

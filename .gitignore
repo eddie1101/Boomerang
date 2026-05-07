@@ -6,5 +6,5 @@ build/
 .project
 .settings/
 .idea/
+**/.cache/
 bin/
-
